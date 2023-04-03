@@ -1,0 +1,512 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: auto 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*############################ NAVIGATION BAR ###################*/
+.nav {
+    display: flex;
+    list-style: none;
+    font-size: 1.8em;
+    margin: 0;
+    background: linear-gradient(to right, #00AAFF, #00ff6c); 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+li {
+    padding: 15px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.push {
+    margin-left: auto;
+    padding-right: 100px;
+}
+
+@media only screen and (max-width: 840px) {
+    .nav{
+        font-size: 1em;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .nav{
+        font-size: 1em;
+        padding: 0;
+    }
+
+    li{
+        padding: 15px;
+    }
+    
+}
+
+/*############################ cover ###################*/
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("./pics/p1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.my_pic {
+    height: 10vh;
+    margin-bottom: 0;
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    text-align: center;
+}
+
+.me {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+h1 {
+    font-weight: 1000;
+    font-size: 6em;
+    position: relative;
+    bottom: 20px;
+    color: whitesmoke;
+}
+
+h3 {
+    position: relative;
+    bottom: 100px;
+    font-size: 3em;
+    margin-top: 0;
+    color: whitesmoke;
+}
+
+.conent1
+{
+    margin-top: 0;
+    height: 20vh;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .my_pic {
+        height: 10vh;
+        margin-bottom: 0;
+        border-radius: 50%;
+        width: 17vw;
+        height: 17vw;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 5em;
+        position: relative;
+        left: 8%;
+    }
+
+    h3 {
+        position: relative;
+        left: 4%;
+        font-size: 2.7em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .my_pic {
+        height: 10vh;
+        margin-bottom: 0;
+        border-radius: 50%;
+        width: 25vw;
+        height: 25vw;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 4em;
+        padding-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 2.2em;
+    }
+
+    .conent1 {
+        position: relative;
+        right: 20px;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .my_pic {
+        height: 10vh;
+        margin-bottom: 0;
+        border-radius: 50%;
+        width: 32vw;
+        height: 32vw;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3.7em;
+    }
+
+    h3 {
+        margin-top: 50px;
+        font-size: 2.2em;
+        text-align: center;
+    }
+   
+    .conent1{
+        position: relative;
+        right: 5%;
+    }
+    
+}
+
+@media only screen and (max-width: 410px) {
+    
+    .my_pic {
+        height: 15vh;
+        margin-bottom: 0;
+        border-radius: 50%;
+        width: 35vw;
+        height: 35vw;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3.7em;
+    }
+
+    h3 {
+        margin-top: 50px;
+        font-size: 2.2em;
+        text-align: center;
+    }
+   
+    .conent1{
+        position: relative;
+        right: 5%;
+    }
+    
+}
+
+/*############################ skills ###################*/
+
+.skills {
+    min-height: 100vh;
+    background-image: url("./pics/p7.jpg");
+    background-size:cover;
+    background-position: center;
+    height: auto;
+}
+
+.full_cont {
+    display: grid;
+    gap: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: flex-start;
+    width: 50vw;
+    position: relative;
+    left: 15%;
+    padding: 50px 0px 0px 200px ;
+}
+
+.t {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.par {
+    color:  whitesmoke;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.skill_list {
+    color:  whitesmoke;
+    font-weight: 600;
+    font-size: 1.2em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill_list li {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.logo {
+    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 20px;
+}
+
+.pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 1500px) {
+    
+    .full_cont {
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        position: relative;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .full_cont {
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        position: relative;
+        left: -10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .full_cont {
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        position: relative;
+        left: -20%;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .full_cont {
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        position: relative;
+        left: -22%;
+    }
+    
+}
+
+/*############################ projects ###################*/
+
+.projects {
+    min-height: 100vh;
+    background-image: url("./pics/new.jpg");
+    background-size:cover;
+    background-position: center;
+    height: auto;
+}
+
+.my_pro {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 2.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    margin: 0;
+    color: rgb(196, 194, 194);
+}
+
+.project_pics {
+    display: grid;
+    gap: 10px;
+    row-gap: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin: 60px 40px 60px 40px;
+}
+
+
+.proj_cont {
+   width: 400px;
+}
+
+.project {
+    height: 200px;
+    width: 400px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project:hover {
+    transform: rotatez(-7deg);
+}
+
+.proj_pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 2.2em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(157, 157, 157);
+}
+
+.link {
+    color: rgb(196, 194, 194);
+}
+
+.space {
+    padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .project_pics {
+        margin: 60px 0px 60px 10px;
+    }
+
+    .my_pro {
+        font-size: 2.3em;
+        margin: 0px 30px 10px 30px;
+    }
+
+    .title {
+        margin: 20px;
+        padding: 0px 20px;
+        font-weight: 500;
+        font-size: 2em;
+        position: relative;
+        right: 10%;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .project_pics {
+        margin-top: 60px;
+        margin: 0;
+    }
+    
+    .title {
+        margin: 20px;
+        padding: 0px 20px;
+        font-weight: 500;
+        font-size: 2em;
+        position: relative;
+        right: 10%;
+    }
+
+    .my_pro {
+        font-size: 2.3em;
+    }
+}
+
+/*############################ contact me ###################*/
+
+.footer 
+{
+    background: linear-gradient(to right, #00AAFF, #00ff6c); 
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    padding: 80px 150px 80px 150px;
+}
+
+
+.contact_list li {
+    list-style: none;
+}
+
+.t2 {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.t3 {
+    font-weight: 700;
+    font-size: 2.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .footer {
+        min-height: 60vh;
+        background-size:cover;
+        background-position: center;
+        height: auto;
+        padding: 0px 0px 0px 60px;
+    }
+
+    .t3 {
+        font-size: 1.5em;
+        position: relative;
+        right: 12%;
+        bottom: 40%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .footer {
+        min-height: 100vh;
+        min-width: 100vw;
+        background-size:cover;
+        background-position: center;
+        height: auto;
+        padding: 0px 0px 0px 60px;
+        position: relative;
+        right: 10%;
+    }
+
+    .t2 {
+        padding-top: 10%;
+    }
+
+    .t3 {
+        font-size: 1.5em;
+        position: relative;
+        right: 12%;
+        bottom: 40%;
+    }
+}
